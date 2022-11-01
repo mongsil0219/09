@@ -6,17 +6,13 @@
 
 int main(void) {
 	int i;
-	int grade[SIZE];
-	int score[SIZE];
+	int a[SIZE] = {1,2,3,4,5};
+	int b[SIZE] = {1,2,3,4,5};
 	
-	for(i=0;i<SIZE;i++)
-		grade[i] = rand() % 100;  //0~99 사이 숫자 나옴 
-		
-	for(i=0;i<SIZE;i++)		
-		score[i] = grade[i];
-		
-	for(i=0;i<SIZE;i++)
-		printf("score[%d] = %d , grade[%d] = %d\n",i, score[i], i, grade[i]);
+	if (a==b)
+		printf("같은 값\n");
+	else
+		printf("다른 값\n");
 		
 	return 0;
 }
